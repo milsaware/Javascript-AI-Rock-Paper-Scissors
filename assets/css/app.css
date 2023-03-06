@@ -1,0 +1,124 @@
+body {
+	font-family: sans-serif;
+	margin: 0;
+	background: #1f3756;
+	color: #fff;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#game-area{
+	position: fixed;
+	width: 600px;
+	height: calc(100vh - 2px);
+	left: calc(50vw - 301px);
+	text-align: center;
+	border: 1px solid;
+}
+
+#score-board p{
+	display: inline-block;
+	padding: 10px;
+	width: calc(50% - 55px);
+	border: 1px solid;
+	font-size: 21px;
+}
+
+.score{
+	display:block;
+	font-size: 40px;
+	margin-top: 10px;
+}
+
+.btn-area{
+	padding: 15px;
+	margin: 7px 0;
+	border-bottom: 3px solid;
+}
+
+.btn-header{
+	display: block;
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+
+.btn, .btn-active, .btn-win, .btn-lose{
+	font-size: 100px;
+	background: transparent;
+	color: #fff;
+	padding: 25px 40px;
+	margin: 5px;
+	border: 2px solid;
+	border-radius: 100%;
+	cursor: pointer;
+	transition:.7s;
+}
+
+.btn:hover, .btn-active{
+	background: orange;
+}
+
+.btn-win{
+	background: green;
+}
+
+.btn-lose{
+	background: red;
+}
+
+#ai-btn-area .btn{
+	cursor: default;
+}
+
+#ai-btn-area .btn:hover{
+	background: transparent;
+}
+
+#notification{
+	position: relative;
+	top: 69px;
+	font-size: 32px;
+}
+
+/* fonts */
+@font-face {
+	font-family: 'icomoon';
+	src:  url('../fonts/icomoon.eot?z6eks2');
+	src:  url('../fonts/icomoon.eot?z6eks2#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?z6eks2') format('truetype'),
+		url('../fonts/icomoon.woff?z6eks2') format('woff'),
+		url('../fonts/icomoon.svg?z6eks2#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-hand-scissors-o:before {
+	content: "\e902";
+}
+.icon-hand-paper-o:before {
+	content: "\e900";
+}
+.icon-hand-stop-o:before {
+	content: "\e900";
+}
+.icon-hand-grab-o:before {
+	content: "\e901";
+}
+.icon-hand-rock-o:before {
+	content: "\e901";
+}
